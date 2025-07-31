@@ -1,0 +1,60 @@
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skills-carousel {
+  display: flex;
+  gap: 2rem;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.skill-card {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  background-color: #3f2da8;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  background-color: #9eef47;
+  color: #1b1b1b;
+  transform: scale(1.08);
+  animation-play-state: paused !important;
+}
+
+.animate-scroll-left {
+  animation-name: scrollLeft;
+}
+
+.animate-scroll-right {
+  animation-name: scrollRight;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

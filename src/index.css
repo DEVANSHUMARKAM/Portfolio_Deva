@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body {
+  @apply text-white;
+
+  background: linear-gradient(to bottom right, #4831d4, #4831d4); /* smooth deep purple */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* subtle grain texture (optional feel) */
+  /* background-image: 
+    linear-gradient(to bottom right, rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(to top left, rgba(255,255,255,0.01) 1px, transparent 1px);
+  background-size: 4px 4px; */
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  scroll-timeline: scroll();
+  scroll-timeline-name: heroSnap;
+  scroll-timeline-axis: vertical;
+  scroll-timeline-duration: 1000ms;
+  scroll-snap-margin: 0px;
+  scroll-snap-align: start;
+  scroll-padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+.hover\:paused:hover {
+  animation-play-state: paused;
+}
+
+
+
