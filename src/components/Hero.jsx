@@ -13,7 +13,7 @@ const Hero = () => {
       {/* Main Content Area */}
       <div className="flex flex-col md:flex-row flex-grow h-[calc(100vh-8rem)]">
         {/* Violet Section */}
-        <div className="w-full md:w-[70%] h-[60%] md:h-full bg-[#4831d4] text-white p-10 flex flex-col justify-center">
+        <div className="w-full md:w-[70%] h-auto bg-[#4831d4] text-white pt-[5rem] p-10 flex flex-col justify-center relative z-10 pb-10">
           <h1 className="text-5xl md:text-8xl font-extrabold text-[#9eef47] mb-6">
             Full Stack Developer.
           </h1>
@@ -31,40 +31,38 @@ const Hero = () => {
           </div>
 
           {/* Social Icons */}
+          {/* Social Icons */}
           <div className="flex space-x-6 mt-4">
-            <a
-              href="https://github.com/DEVANSHUMARKAM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition transform hover:scale-110 hover:bg-[#9eef47] text-white hover:text-[#1b1b1b] p-3 rounded-full bg-[#3f2da8] shadow-lg"
-            >
-              <FontAwesomeIcon icon={faGithub} size="lg" />
-            </a>
-            <a
-              href="https://linkedin.com/in/devanshumarkam"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition transform hover:scale-110 hover:bg-[#9eef47] text-white hover:text-[#1b1b1b] p-3 rounded-full bg-[#3f2da8] shadow-lg"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="lg" />
-            </a>
-            <a
-              href="https://x.com/markam54352"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition transform hover:scale-110 hover:bg-[#9eef47] text-white hover:text-[#1b1b1b] p-3 rounded-full bg-[#3f2da8] shadow-lg"
-            >
-              <FontAwesomeIcon icon={faTwitter} size="lg" />
-            </a>
-            <a
-              href="https://www.instagram.com/dev._markam?utm_source=qr&igsh=MXRiMXEzZGN1MmlnZw=="
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition transform hover:scale-110 hover:bg-[#9eef47] text-white hover:text-[#1b1b1b] p-3 rounded-full bg-[#3f2da8] shadow-lg"
-            >
-              <FontAwesomeIcon icon={faInstagram} size="lg" />
-            </a>
+            {[
+              {
+                href: "https://github.com/DEVANSHUMARKAM",
+                icon: faGithub,
+              },
+              {
+                href: "https://linkedin.com/in/devanshumarkam",
+                icon: faLinkedin,
+              },
+              {
+                href: "https://x.com/markam54352",
+                icon: faTwitter,
+              },
+              {
+                href: "https://www.instagram.com/dev._markam?utm_source=qr&igsh=MXRiMXEzZGN1MmlnZw==",
+                icon: faInstagram,
+              },
+            ].map(({ href, icon }, i) => (
+              <a
+                key={i}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition transform hover:scale-110 p-3 rounded-full border-2 border-white bg-[#3f2da8] text-white hover:bg-[#9eef47] hover:text-[#1b1b1b] shadow-md"
+              >
+                <FontAwesomeIcon icon={icon} size="lg" />
+              </a>
+            ))}
           </div>
+
         </div>
 
         {/* Lime Green Section with Image */}

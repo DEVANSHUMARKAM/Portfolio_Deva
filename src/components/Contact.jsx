@@ -12,7 +12,7 @@ const Contact = () => {
     form.message &&
     form.message.length <= 20;
 
-  const formspreeEndpoint = "https://formspree.io/f/xldllwql"; // ← Replace with your actual Form ID
+  const formspreeEndpoint = "https://formspree.io/f/xldllwql"; // Replace with your actual Form ID
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +37,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-[#9eef47]"
+              className="w-full p-3 rounded-lg border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-[#9eef47] text-[#1b1b1b] placeholder:text-gray-500"
               placeholder="John Doe"
               required
             />
@@ -53,7 +53,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-[#9eef47]"
+              className="w-full p-3 rounded-lg border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-[#9eef47] text-[#1b1b1b] placeholder:text-gray-500"
               placeholder="john@example.com"
               required
             />
@@ -73,7 +73,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              className="w-full p-3 rounded-lg border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-[#9eef47]"
+              className="w-full p-3 rounded-lg border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-[#9eef47] text-[#1b1b1b] placeholder:text-gray-500"
               placeholder="Type your message..."
               rows="4"
               maxLength={20}
@@ -113,15 +113,22 @@ const Contact = () => {
             </a>
           </p>
 
-          {/* Social Icons (optional) */}
+          {/* Social Icons */}
           <div className="flex justify-center space-x-6 mt-4 text-2xl">
-            <a href="https://linkedin.com/in/devanshumarkam" target="_blank" rel="noreferrer">
+            <a
+              href="https://linkedin.com/in/devanshumarkam"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-linkedin text-[#4831d4] hover:text-[#9eef47]"></i>
             </a>
-            <a href="https://github.com/DEVANSHUMARKAM" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/DEVANSHUMARKAM"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-github text-[#4831d4] hover:text-[#9eef47]"></i>
             </a>
-            {/* Add more if needed */}
           </div>
         </div>
       </div>
