@@ -4,12 +4,12 @@ const educationData = [
   {
     title: "Kendriya Vidyalaya Sangathan",
     subtitle: "10th Grade",
-    year: "2019",
+    score: "74.45",
   },
   {
     title: "Kendriya Vidyalaya Sangathan",
     subtitle: "12th Grade",
-    year: "2021",
+    score: "80.14",
   },
   {
     title: "Yeshwantrao Chavan College of Engineering, Nagpur",
