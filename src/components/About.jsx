@@ -4,7 +4,7 @@ const aboutData = [
   {
     title: "🎓 Education",
     content:
-      "I am a graduate in  Bachelor of Technology (B.Tech) in Information Technology from Yeshwantrao Chavan College of Engineering, Nagpur (2026). My academic journey has built a strong foundation in development, system design, and problem solving.",
+      "I am a graduate in  Bachelor of Technology (B.Tech) in Information Technology from Yeshwantrao Chavan College of Engineering, Nagpur. My academic journey has built a strong foundation in development, system design, and problem solving.",
   },
   {
     title: "🧠 Skills",
