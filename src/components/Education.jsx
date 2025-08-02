@@ -35,7 +35,7 @@ const Education = () => {
               {item.title}
             </h3>
             <p className="text-md text-gray-700 mb-1">{item.subtitle}</p>
-            <p className="text-sm text-gray-500 font-medium">{item.year}</p>
+            <p className="text-sm text-gray-500 font-medium">{item.score}</p>
           </div>
         ))}
       </div>
