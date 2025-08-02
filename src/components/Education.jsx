@@ -14,7 +14,6 @@ const educationData = [
   {
     title: "Yeshwantrao Chavan College of Engineering, Nagpur",
     subtitle: "B.Tech in Information Technology",
-    year: "2026 (Pursuing)",
   },
 ];
 
