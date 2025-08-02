@@ -1,6 +1,30 @@
 .carousel-wrapper {
+  position: relative;
   overflow: hidden;
   width: 100%;
+  padding: 0 4rem; /* Add breathing space on both sides */
+}
+
+/* Fading overlays on both ends */
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.carousel-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #4831d4, transparent);
+}
+
+.carousel-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #4831d4, transparent);
 }
 
 .skills-carousel {
@@ -30,7 +54,11 @@
   background-color: #9eef47;
   color: #1b1b1b;
   transform: scale(1.08);
-  animation-play-state: paused !important;
+}
+
+/* Pause scroll animation when hovered */
+.skills-carousel:hover {
+  animation-play-state: paused;
 }
 
 .animate-scroll-left {
@@ -56,5 +84,19 @@
   }
   100% {
     transform: translateX(0%);
+  }
+}
+
+/* Responsive: reduce card size on small devices */
+@media (max-width: 640px) {
+  .skill-card {
+    width: 110px;
+    height: 110px;
+    padding: 0.75rem;
+  }
+
+  .carousel-wrapper::before,
+  .carousel-wrapper::after {
+    width: 40px;
   }
 }

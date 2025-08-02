@@ -76,11 +76,11 @@ const Contact = () => {
               className="w-full p-3 rounded-lg border border-gray-300 shadow focus:outline-none focus:ring-2 focus:ring-[#9eef47] text-[#1b1b1b] placeholder:text-gray-500"
               placeholder="Type your message..."
               rows="4"
-              maxLength={20}
+              maxLength={100}
               required
             />
             <p className="text-sm text-gray-600 mt-1">
-              {form.message.length}/20 characters
+              {form.message.length}/100 characters
             </p>
           </div>
 

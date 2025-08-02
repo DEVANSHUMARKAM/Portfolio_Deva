@@ -24,8 +24,22 @@ const skillsRow2 = [
   { name: "Linux", icon: "/icons/linux.svg" },
   { name: "Git", icon: "/icons/git.svg" },
   { name: "GitHub", icon: "/icons/github.svg" },
-  { name: "AS400", icon: "/icons/as400.svg" },
+  { name: "AS400", icon: "/icons/ibm.svg" },
 ];
+const skillsTools3 = [
+  { name: "VS Code", icon: "/icons/vscode.svg" },
+  { name: "IntelliJ IDEA", icon: "/icons/intellij.svg" },
+  { name: "Eclipse", icon: "/icons/eclipse.svg" },
+  { name: "NetBeans", icon: "/icons/netbeans.svg" },
+  { name: "WebStorm", icon: "/icons/webstorm.svg" },
+  { name: "AWS", icon: "/icons/aws.svg" },
+  { name: "Azure", icon: "/icons/azure.svg" },
+  { name: "Render", icon: "/icons/render.svg" },
+  { name: "Railway", icon: "/icons/railway.svg" },
+  { name: "Netlify", icon: "/icons/netlify.svg" },
+  { name: "Vercel", icon: "/icons/vercel.svg" },
+];
+
 
 const Skills = () => {
   return (
@@ -57,6 +71,18 @@ const Skills = () => {
           ))}
         </div>
       </div>
+      {/* Carousel Row 3 */}
+      <div className="carousel-wrapper mt-20">
+        <div className="skills-carousel animate-scroll-left">
+          {[...skillsTools3, ...skillsTools3].map((skill, index) => (
+            <div key={index} className="skill-card">
+              <img src={skill.icon} alt={skill.name} className="w-16 h-16 mb-3 mx-auto" />
+              <span className="text-md font-semibold">{skill.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </section>
   );
 };

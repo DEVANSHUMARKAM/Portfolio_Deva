@@ -6,35 +6,35 @@ const projects = [
     description:
       "A full-stack solar panel booking platform with real-time booking, location selection, and integrated backend built with React.js, Spring Boot, and MySQL.",
     live: "https://solar-square-live-link.com",
-    github: "https://github.com/DEVANSHUMARKAM/Solar-Square",
+    github: "https://github.com/DEVANSHUMARKAM/Solar_Square.git",
   },
   {
     title: "Chatting Application",
     description:
       "A real-time, multi-threaded chat system using Java Sockets and Swing UI. Supports multiple client connections with server message handling.",
     live: "#",
-    github: "https://github.com/DEVANSHUMARKAM/Chatting_App",
+    github: "https://github.com/DEVANSHUMARKAM/Chatting_App.git",
   },
   {
     title: "Airline Management System",
     description:
       "A Java-based desktop system to manage airline operations including flights, bookings, and tickets. Developed using AWT/Swing and MySQL.",
     live: "#",
-    github: "https://github.com/DEVANSHUMARKAM/AirLine_Management_System",
+    github: "https://github.com/DEVANSHUMARKAM/AirLine_Management_System.git",
   },
   {
     title: "Car Rental App",
     description:
       "A GUI-based desktop app to manage car inventory, booking system, and customer data using Java Swing, AWT, and MySQL database.",
     live: "#",
-    github: "https://github.com/DEVANSHUMARKAM/Car_Rental_App",
+    github: "https://github.com/DEVANSHUMARKAM/Car_Rental_App.git",
   },
   {
     title: "Money Manager Web App",
     description:
       "A full-stack expense tracking application using Spring Boot, Hibernate, MySQL, and JWT for authentication. Includes user-based dashboard and REST API.",
     live: "#",
-    github: "https://github.com/DEVANSHUMARKAM/Money-Manager",
+    github: "https://github.com/DEVANSHUMARKAM/Money-Manager.git",
   },
   {
     title: "Deva Google Form",

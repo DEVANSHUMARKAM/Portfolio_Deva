@@ -53,8 +53,8 @@ const Footer = ({ scrollRef }) => {
       </div>
 
       {/* Divider + Copyright */}
-      <hr className="my-8 border-gray-500" />
-      <div className="text-center text-sm text-gray-300">
+      <hr className="my-8 border-gray-1000" />
+      <div className="text-center text-sm text-gray-1000">
         &copy; {new Date().getFullYear()} Devanshu Markam. All rights reserved.
       </div>
     </footer>
